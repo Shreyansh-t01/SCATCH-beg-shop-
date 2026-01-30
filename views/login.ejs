@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+  <div class="bg bg-panel">
+        <div class="bg-gray-300 h-screen w-fit flex flex-col items-center justify-center px-10 gap-1">
+              <h1 class="brandname text-blue-500 ">SCATCH</h1>
+             <h1 class="mainheading self-start">Login Your Account Here...</h1>
+                <form action="/users/login" method="post" class="form">
+                  <input type="email" name="email" placeholder="enter your email" class="input ">
+                  <input type="password" name="password" class="input"  >
+                  <button class="btn">login</button>
+                </form>
+        </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    
+   
+</head>
+<body>
+  <div class="bg-panel h-screen w-screen flex flex-col items-center justify-center gap-8">
+      <div class=" h-screen bg-gray-300 flex flex-col justify-center items-center px-10">
+              <h1 class="mainheading text-2xl ">WELCOME TO <span class=" text-blue-500  ">SCATCH</span></h1>
+
+
+                <div class="flex flex-col gap-3 w-150">
+                         <h2 class=" self-start font-semibold">Register your account here</h2>
+                        <div class=" flex flex-col gap-4">
+                                    <form action="/users/register"  method="post" class="flex flex-col gap-3 w-100 h-150">
+
+                                    <input type="text" placeholder="Your full name" name="fullname" class="w-150 h-150 rounded  px-7 py-2   bg-blue-100 border-dashed text-zinc-800">
+                                        <input type="text" placeholder="Enter your email here" name="email" class="w-150 h-150 rounded  px-7 py-2  bg-blue-100 border-dashed text-zinc-800">
+                                <input type="password" placeholder="Create your password" name="password" class="w-150 h-150 rounded px-7  py-2 bg-blue-100 border-dashed text-zinc-800">
+                                <button name="register" class="bg-blue-500 text-white rounded text-white  w-70  ">submit</button>
+
+                                </form>
+                                <a href="/login" class="bg-zinc-600 rounded text-white px-5 py-2">go to the login page</a>
+                        </div>
+                </div>
+      </div>
+  </div>
+</body>
+</html>

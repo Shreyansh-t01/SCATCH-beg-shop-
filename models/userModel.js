@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 
 const userSchema = mongoose.Schema(
@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema(
             type:Array,
             defualt:[]
         } ,
-        isadmin : Boolean,
+      
         contact :Number,
         picture : String ,
         orders:{
@@ -20,5 +20,5 @@ const userSchema = mongoose.Schema(
     })
 
 
-    mongoose.exports = mongoose.model("user" , userSchema)
+    module.exports = mongoose.model("user" , userSchema);
  

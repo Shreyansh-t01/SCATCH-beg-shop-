@@ -10,7 +10,7 @@ const ownerSchema = mongoose.Schema(
             type:Array,
             defualt:[]
         } ,
-        isadmin : Boolean,
+     
         contact :Number,
         picture : String ,
         products:{
@@ -20,5 +20,5 @@ const ownerSchema = mongoose.Schema(
         gstin:String
     })
 
-
-    mongoose.exports = mongoose.model("user" , ownerSchema)
+ 
+    module.exports = mongoose.model("Owner" , ownerSchema)
