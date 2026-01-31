@@ -4,8 +4,8 @@ const userModel = require('../models/userModel');
 
 module.exports=async function(req,res,next){
     if(!req.cookies.token){
-        req.flash("error","you need to login first")
-        return res.redirect("/")
+       
+        return res.redirect("/");
     }
 
     try{

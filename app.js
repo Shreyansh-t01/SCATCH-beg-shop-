@@ -35,6 +35,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'uploads')))
 app.set('view engine','ejs')
 
 
@@ -43,7 +44,7 @@ app.set('view engine','ejs')
 
 
 
-app.use("/",indexRouter)
+app.use("/",indexRouter)                  
 app.use("/owners",ownersRouter);
 app.use("/users",usersRouter);
 app.use("/products",productsRouter);
